@@ -1,0 +1,5 @@
+yfinance
+google-genai
+streamlit
+pydantic
+python-dotenv
