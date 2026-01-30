@@ -99,12 +99,26 @@ Given a stock ticker (e.g., `AAPL`, `MSTR`, `TSLA`), the system:
    cd kwealth
    ```
 
-2. **Install dependencies**
+2. **Create and activate virtual environment**
+   
+   On Windows:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+   
+   On macOS/Linux:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Configure API key**
+4. **Configure API key**
    
    Create a `.env` file (use `.env.example` as template):
    ```bash
@@ -117,26 +131,15 @@ Given a stock ticker (e.g., `AAPL`, `MSTR`, `TSLA`), the system:
 
 ### Run the Streamlit UI
 
-1. **Activate the virtual environment**
-   
-   On Windows:
-   ```bash
-   venv\Scripts\activate
-   ```
-   
-   On macOS/Linux:
-   ```bash
-   source venv/bin/activate
-   ```
-
-2. **Run the application**
-   ```bash
-   streamlit run app.py
-   # or
-   python -m streamlit run app.py
-   ```
+```bash
+streamlit run app.py
+# or
+python -m streamlit run app.py
+```
 
 Then open your browser to `http://localhost:8501`
+
+**Note:** Make sure your virtual environment is activated before running the app.
 
 ### Example Workflow
 
