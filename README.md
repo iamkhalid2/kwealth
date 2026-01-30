@@ -117,11 +117,24 @@ Given a stock ticker (e.g., `AAPL`, `MSTR`, `TSLA`), the system:
 
 ### Run the Streamlit UI
 
-```bash
-streamlit run app.py
-# or
-python -m streamlit run app.py
-```
+1. **Activate the virtual environment**
+   
+   On Windows:
+   ```bash
+   venv\Scripts\activate
+   ```
+   
+   On macOS/Linux:
+   ```bash
+   source venv/bin/activate
+   ```
+
+2. **Run the application**
+   ```bash
+   streamlit run app.py
+   # or
+   python -m streamlit run app.py
+   ```
 
 Then open your browser to `http://localhost:8501`
 
